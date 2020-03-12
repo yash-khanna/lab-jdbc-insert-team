@@ -5,7 +5,8 @@
 
 ## Progression 1:
 
-Create Main.java with main method Create Team.java domain class with below attributes, 
+Create a class called as `Main` with main method 
+Create a class called as `Team` with below attributes, 
 ```
 name - String 
 coach - String 
@@ -19,7 +20,7 @@ Include a constructor with below arguments,
  
 ## Progression 2:
 
-Create `City.java` domain class with below attributes, 
+Create a class called as `City` with below attributes, 
 ```
 cityld - Long 
 cityName - String 
@@ -32,13 +33,13 @@ Include a constructor with below arguments,
 
 ## Progression 3:
 
-Create `CityDA0` class with below methods, 
+Create a dao-class called as `CityDA0` with below methods, 
 `public City getCityByName(String name)` - Method to fetch the city information from database based on the city name. 
 
 
 ## Progression 4:
 
-Create `TeamDAO` class to insert user into the database, 
+Create a dao-class called as `TeamDAO` to insert user into the database, 
 `public void createTeam(Team team)` - Method used to insert new team into the database
 
 
