@@ -58,3 +58,24 @@ public static Properties loadPropertiesFile() throws Exception {
 	return prop;
 }
 ```    
+**Sample Input and Output**
+```
+Enter team name 
+England 
+Enter coach name 
+Pravin Amre 
+Enter the city 
+1.Pune 
+2.Hyderabad 
+3.Delhi 
+1 
+Team has been created 
+Team Details are: 
+Name 			Coach			C
+England 		Paddy Upton     	United Kingdom
+Australia 		Brad Hodge		Victoria
+India 			Sanjay Bangar		Kolkata
+England		 	Jacques Kallis		United Kingdom
+America 		Ricky Ponting		New York
+South Africa 		Pravin Amre 		Cape Town
+```
