@@ -71,7 +71,7 @@ Enter the city
 1 
 Team has been created 
 Team Details are: 
-Name 			Coach			C
+Name 			Coach			City
 England 		Paddy Upton     	United Kingdom
 Australia 		Brad Hodge		Victoria
 India 			Sanjay Bangar		Kolkata
