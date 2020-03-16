@@ -3,44 +3,77 @@
 # ProGrad Lab | ProGrad Premier League
 
 
+
+## What Should You Do
+```
+Fork this repo
+Clone this repo
+Practice Java JDBC - connections, class and object
+```
+
+## How To Submit
+```
+Upon completion, run the following commands:
+
+git add .
+git commit -m "ProGrad ID"
+git push origin master
+
+And finally, create a pull request so your ProGrad Mentor (PM) can review your work.
+```
+
+## Instructions
+
+1. ***Do not modify the entire code.***
+2. ***Edit the code as per the instructions.***
+3. ***Go to Java Resources -> src folder.***
+4. ***Your database connection code should exist inside the utlity package.***
+5. ***Your CREATE,READ,UPDATE and DELETE operations should exist inside the dao package.***
+6. ***Once the progressions are completed follow the instructions to run the application and test your code.***
+7. ***Add appropriate jars to your project directory.***
+8. ***To add dependencies, right click on your project - select build path - configure build path - select libraries tab - select add external jars and add the downloaded jar files.***
+
+## Requirements
+Download ojdbc6.jar from the given link [https://www.oracle.com/database/technologies/jdbcdriver-ucp-downloads.html]
+
+
 ## Progression 1:
 
-Create a class called as `Main` with main method 
-Create a class called as `Team` with below attributes, 
-```
-name - String 
-coach - String 
-city - City 
-```
-
-Include getter and setter method for all the attributes 
-Include a constructor with below arguments, 
-`public Team(String name, String coach, String captain, City city)`
+1. ***Create a class called as `Team` inside the model package with below attributes,***
+	- name - String 
+	- coach - String 
+	- city - City 
+2. ***Include getter and setter method for all the attributes***
+3. ***Include a constructor with below arguments,***
+	- ***public Team(String name, String coach, String captain, City city)***
  
  
 ## Progression 2:
 
-Create a class called as `City` with below attributes, 
-```
-cityld - Long 
-cityName - String 
-```
-
-Include getter and setter method for all the attributes 
-Include a constructor with below arguments, 
-`public City(cityld,cityName)`
+1. ***Create a class called as `City` inside the model package with below attributes,*** 
+	- cityld - Long 
+	- cityName - String 
+2. ***Include getter and setter method for all the attributes,***
+3. ***Include a constructor with below arguments,***
+	- ***public City(cityld,cityName)***
 
 
 ## Progression 3:
 
-Create a dao-class called as `CityDA0` with below methods, 
-`public City getCityByName(String name)` - Method to fetch the city information from database based on the city name. 
-
+1. ***Create a dao-class called as `CityDA0` with below methods,***
+	- ***public City getCityByName(String name) - Method to fetch the city information from database based on the city name.*** 
 
 ## Progression 4:
 
-Create a dao-class called as `TeamDAO` to insert user into the database, 
-`public void createTeam(Team team)` - Method used to insert new team into the database
+1. ***Create a dao-class called as `TeamDAO` to insert user into the database,***
+	- ***public void createTeam(Team team) - Method used to insert new team into the database.***
+	
+## Progression 5:
+1. ***Create a main-class called Main inside the controller package,***
+2. ***Create appropriate objects for the TeamDAO and CityDAO class.***
+3. ***Create appropriate objects for the model classes.***
+4. ***Get the values from main class and pass to the createTeam method to store in the database.***
+5. ***Call the getCityByName method and display the details of the players.***
 
 
 
@@ -58,7 +91,18 @@ public static Properties loadPropertiesFile() throws Exception {
 	in.close(); 
 	return prop;
 }
-```    
+```  
+
+Create a file called as jdbc.properites. To create a file right click on the application - new - file - name the file as jdbc.properties.
+```
+jdbc.properties
+#JDBC properties entry for MYSQL server
+driver = oracle.jdbc.OracleDriver
+url=jdbc:oracle:thin:@localhost:1521:xe
+username=your_username
+password=your_password
+
+```
 **Sample Input and Output**
 ```
 Enter team name 
@@ -66,17 +110,14 @@ England
 Enter coach name 
 Pravin Amre 
 Enter the city 
-1.Pune 
-2.Hyderabad 
-3.Delhi 
-1 
+Cape Town
 Team has been created 
 Team Details are: 
 Name 			Coach			City
-England 		Paddy Upton     	United Kingdom
+England 		Paddy Upton     	Yorkshire
 Australia 		Brad Hodge		Victoria
 India 			Sanjay Bangar		Kolkata
-England		 	Jacques Kallis		United Kingdom
+England		 	Jacques Kallis		New Orleans
 America 		Ricky Ponting		New York
 South Africa 		Pravin Amre 		Cape Town
 ```
