@@ -1,7 +1,12 @@
 ![Image description](https://i1.faceprep.in/ProGrad/face-logo-resized.png)
 
-# ProGrad Lab | ProGrad Premier League
+# ProGrad Lab | ProGrad Pro Kabbadi League 
 
+ProGrad Pro Kabbadi League is gonna begin in a month from now. Our ProGrad organizers are pretty excited to see the champions. We have nearly 20 teams participating in the league. So, there's a lot of data like players, scores etc that need to be collected and stored to decide the winners at each level.
+
+One of our Database specialist has done half the job by creating an ER diagram to visualise the database structure. That's when we thought we could take your help to take this project to completion as you have just started working with databases.
+
+Can you give it a try?
 
 
 ## What Should You Do
@@ -34,57 +39,57 @@ And finally, create a pull request so your ProGrad Mentor (PM) can review your w
 8. ***To add dependencies, right click on your project - select build path - configure build path - select libraries tab - select add external jars and add the downloaded jar files.***
 
 ## Requirements
-Download ojdbc6.jar from the given link [https://www.oracle.com/database/technologies/jdbcdriver-ucp-downloads.html]
 
+Download ojdbc6.jar from the given link [https://www.oracle.com/database/technologies/jdbcdriver-ucp-downloads.html]
 
 ## Progression 0:
 
-1. ***Right click on src folder and select new - file and name it as jdbc.properties.***
-2. ***You can use the jdbc properties given below in the NOTE section.***
+1. Right click on src folder and select new - file and name it as jdbc.properties.
+2. You can use the jdbc properties given below in the NOTE section.
 
 ## Progression 1:
 
-1. **Create a class called as `ConnectionManager` inside the utility package.**
-2. **Create a method public static Connection getConnection() which returns a connection object.** 
-3. **Use the method public static Properties loadPropertiesFile() to load the jdbc properties from the jdbc.properties file.**
+1. Create a class called as `ConnectionManager` inside the utility package.
+2. Create a method public static Connection getConnection() which returns a connection object. 
+3. Use the method public static Properties loadPropertiesFile() to load the jdbc properties from the jdbc.properties file.
 
 ## Progression 2:
 
-1. ***Create a class called as `Team` inside the model package with below attributes,***
+1. Create a class called as `Team` inside the model package with below attributes,
 	- name - String 
 	- coach - String 
 	- city - City 
-2. ***Include getter and setter method for all the attributes***
-3. ***Include a constructor with below arguments,***
-	- ***public Team(String name, String coach, String captain, City city)***
+2. Include getter and setter method for all the attributes
+3. Include a constructor with below arguments,
+	- public Team(String name, String coach, String captain, City city)
  
  
 ## Progression 3:
 
-1. ***Create a class called as `City` inside the model package with below attributes,*** 
+1. Create a class called as `City` inside the model package with below attributes,
 	- cityld - Long 
 	- cityName - String 
-2. ***Include getter and setter method for all the attributes,***
-3. ***Include a constructor with below arguments,***
-	- ***public City(cityld,cityName)***
+2. Include getter and setter method for all the attributes,
+3. Include a constructor with below arguments,
+	- public City(cityld,cityName)
 
 
 ## Progression 4:
 
-1. ***Create a dao-class called as `CityDA0` with below methods,***
-	- ***public City getCityByName(String name) - Method to fetch the city information from database based on the city name.*** 
+1. Create a dao-class called as `CityDA0` with below methods
+	- public City getCityByName(String name) - Method to fetch the city information from database based on the city name.
 
 ## Progression 5:
 
-1. ***Create a dao-class called as `TeamDAO` to insert user into the database,***
-	- ***public void createTeam(Team team) - Method used to insert new team into the database.***
+1. Create a dao-class called as `TeamDAO` to insert user into the database,
+	- public void createTeam(Team team) - Method used to insert new team into the database.
 	
 ## Progression 6:
-1. ***Create a main-class called Main inside the controller package,***
-2. ***Create appropriate objects for the TeamDAO and CityDAO class.***
-3. ***Create appropriate objects for the model classes.***
-4. ***Get the values from main class and pass to the createTeam method to store in the database.***
-5. ***Call the getCityByName method and display the details of the players.***
+1. Create a main-class called Main inside the controller package.
+2. Create appropriate objects for the TeamDAO and CityDAO class.
+3. Create appropriate objects for the model classes.
+4. Get the values from main class and pass to the createTeam method to store in the database.
+5. Call the getCityByName method and display the details of the players.
 
 
 
@@ -132,3 +137,5 @@ England		 	Jacques Kallis		New Orleans
 America 		Ricky Ponting		New York
 South Africa 		Pravin Amre 		Cape Town
 ```
+
+Happy Coding ❤️
