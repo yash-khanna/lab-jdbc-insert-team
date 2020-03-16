@@ -37,7 +37,18 @@ And finally, create a pull request so your ProGrad Mentor (PM) can review your w
 Download ojdbc6.jar from the given link [https://www.oracle.com/database/technologies/jdbcdriver-ucp-downloads.html]
 
 
+## Progression 0:
+
+1. ***Right click on src folder and select new - file and name it as jdbc.properties.***
+2. ***You can use the jdbc properties given below in the NOTE section.***
+
 ## Progression 1:
+
+1. **Create a class called as `ConnectionManager` inside the utility package.**
+2. **Create a method public static Connection getConnection() which returns a connection object.** 
+3. **Use the method public static Properties loadPropertiesFile() to load the jdbc properties from the jdbc.properties file.**
+
+## Progression 2:
 
 1. ***Create a class called as `Team` inside the model package with below attributes,***
 	- name - String 
@@ -48,7 +59,7 @@ Download ojdbc6.jar from the given link [https://www.oracle.com/database/technol
 	- ***public Team(String name, String coach, String captain, City city)***
  
  
-## Progression 2:
+## Progression 3:
 
 1. ***Create a class called as `City` inside the model package with below attributes,*** 
 	- cityld - Long 
@@ -58,17 +69,17 @@ Download ojdbc6.jar from the given link [https://www.oracle.com/database/technol
 	- ***public City(cityld,cityName)***
 
 
-## Progression 3:
+## Progression 4:
 
 1. ***Create a dao-class called as `CityDA0` with below methods,***
 	- ***public City getCityByName(String name) - Method to fetch the city information from database based on the city name.*** 
 
-## Progression 4:
+## Progression 5:
 
 1. ***Create a dao-class called as `TeamDAO` to insert user into the database,***
 	- ***public void createTeam(Team team) - Method used to insert new team into the database.***
 	
-## Progression 5:
+## Progression 6:
 1. ***Create a main-class called Main inside the controller package,***
 2. ***Create appropriate objects for the TeamDAO and CityDAO class.***
 3. ***Create appropriate objects for the model classes.***
